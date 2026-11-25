@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+
+
+
+/* 404 — Typography System */
+
+@layer base {
+    body {
+        font-family: 'Manrope', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+    }
+}
+
+@layer utilities {
+    .font-heading {
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .font-heading-italic {
+        font-family: 'DM Serif Display', serif;
+        font-style: italic;
+    }
+
+    .font-body {
+        font-family: 'Manrope', sans-serif;
+    }
+}
+

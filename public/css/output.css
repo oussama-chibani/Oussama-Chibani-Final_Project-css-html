@@ -1,12 +1,25 @@
 /*! tailwindcss v4.3.5 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
       "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-600: oklch(66.6% 0.179 58.318);
+    --color-indigo-600: oklch(51.1% 0.262 276.966);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -160,7 +173,317 @@
   }
 }
 @layer utilities {
-  .hidden {
-    display: none;
+  .flex {
+    display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .h-\[80vh\] {
+    height: 80vh;
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50vw\] {
+    width: 50vw;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-\[1rem\] {
+    gap: 1rem;
+  }
+  .gap-\[2\] {
+    gap: 2;
+  }
+  .gap-\[2rem\] {
+    gap: 2rem;
+  }
+  .gap-\[3\] {
+    gap: 3;
+  }
+  .gap-\[3rem\] {
+    gap: 3rem;
+  }
+  .gap-\[4rem\] {
+    gap: 4rem;
+  }
+  .gap-\[5rem\] {
+    gap: 5rem;
+  }
+  .gap-\[rem\] {
+    gap: rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-amber-600 {
+    border-color: var(--color-amber-600);
+  }
+  .border-indigo-600 {
+    border-color: var(--color-indigo-600);
+  }
+  .bg-\[\#F47732\] {
+    background-color: #F47732;
+  }
+  .bg-\[\#FCE8DA\] {
+    background-color: #FCE8DA;
+  }
+  .bg-\[\#FFF9F4\] {
+    background-color: #FFF9F4;
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .p-\[3rem\] {
+    padding: 3rem;
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-\[2rem\] {
+    padding-inline: 2rem;
+  }
+  .px-\[3rem\] {
+    padding-inline: 3rem;
+  }
+  .px-\[4rem\] {
+    padding-inline: 4rem;
+  }
+  .px-\[5rem\] {
+    padding-inline: 5rem;
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-\[1rem\] {
+    padding-block: 1rem;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .text-\[2vw\] {
+    font-size: 2vw;
+  }
+  .text-\[3vw\] {
+    font-size: 3vw;
+  }
+  .text-\[4vw\] {
+    font-size: 4vw;
+  }
+  .text-\[5px\] {
+    font-size: 5px;
+  }
+  .text-\[5vw\] {
+    font-size: 5vw;
+  }
+  .text-\[10vw\] {
+    font-size: 10vw;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
+  }
+  .text-\[55px\] {
+    font-size: 55px;
+  }
+  .text-\[56px\] {
+    font-size: 56px;
+  }
+  .text-\[57px\] {
+    font-size: 57px;
+  }
+  .text-\[58px\] {
+    font-size: 58px;
+  }
+  .leading-2 {
+    --tw-leading: calc(var(--spacing) * 2);
+    line-height: calc(var(--spacing) * 2);
+  }
+  .leading-\[3rem\] {
+    --tw-leading: 3rem;
+    line-height: 3rem;
+  }
+  .leading-\[4rem\] {
+    --tw-leading: 4rem;
+    line-height: 4rem;
+  }
+  .leading-\[15rem\] {
+    --tw-leading: 15rem;
+    line-height: 15rem;
+  }
+  .leading-\[rem\] {
+    --tw-leading: rem;
+    line-height: rem;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-\[\#F47732\] {
+    color: #F47732;
+  }
+  .text-\[\#e46825\] {
+    color: #e46825;
+  }
+  .text-\[1\] {
+    color: 1;
+  }
+  .text-\[2\] {
+    color: 2;
+  }
+  .text-\[10\] {
+    color: 10;
+  }
+  .text-\[px\] {
+    color: px;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  @media (hover: hover) {
+    .hover\:text-\[\#F47732\]:hover {
+      color: #F47732;
+    }
+  }
+}
+@layer base {
+  body {
+    font-family: 'Manrope', sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+  }
+}
+@layer utilities {
+  .font-heading {
+    font-family: 'DM Serif Display', serif;
+  }
+  .font-heading-italic {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+  }
+  .font-body {
+    font-family: 'Manrope', sans-serif;
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
   }
 }
