@@ -206,6 +206,9 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -233,6 +236,12 @@
   .w-\[55vw\] {
     width: 55vw;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[80\] {
+    width: 80;
+  }
   .w-\[100vw\] {
     width: 100vw;
   }
@@ -248,8 +257,17 @@
   .flex-1 {
     flex: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .transform {
+    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -299,6 +317,9 @@
   .gap-\[5rem\] {
     gap: 5rem;
   }
+  .gap-\[7rem\] {
+    gap: 7rem;
+  }
   .gap-\[10rem\] {
     gap: 10rem;
   }
@@ -339,6 +360,9 @@
   .border-amber-600 {
     border-color: var(--color-amber-600);
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
   .border-white\/70 {
     border-color: color-mix(in srgb, #fff 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -356,6 +380,15 @@
   }
   .bg-\[\#fdf6ef\] {
     background-color: #fdf6ef;
+  }
+  .bg-\[\#fee8e2\] {
+    background-color: #fee8e2;
+  }
+  .bg-\[fee8e2\#\] {
+    background-color: fee8e2#;
+  }
+  .bg-\[fee8e2\] {
+    background-color: fee8e2;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -405,11 +438,11 @@
   .p-\[3rem\] {
     padding: 3rem;
   }
-  .p-\[5\] {
-    padding: 5;
-  }
   .p-\[5rem\] {
     padding: 5rem;
+  }
+  .p-\[10rem\] {
+    padding: 10rem;
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -419,6 +452,12 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-30 {
     padding-inline: calc(var(--spacing) * 30);
@@ -432,8 +471,17 @@
   .px-\[5rem\] {
     padding-inline: 5rem;
   }
+  .px-\[10\] {
+    padding-inline: 10;
+  }
   .px-\[10rem\] {
     padding-inline: 10rem;
+  }
+  .px-\[20rem\] {
+    padding-inline: 20rem;
+  }
+  .px-\[rem\] {
+    padding-inline: rem;
   }
   .py-1 {
     padding-block: var(--spacing);
@@ -441,11 +489,26 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
   .py-\[1rem\] {
     padding-block: 1rem;
+  }
+  .py-\[3rem\] {
+    padding-block: 3rem;
+  }
+  .py-\[4rem\] {
+    padding-block: 4rem;
+  }
+  .py-\[5rem\] {
+    padding-block: 5rem;
   }
   .font-serif {
     font-family: var(--font-serif);
@@ -514,6 +577,9 @@
   .text-amber-600 {
     color: var(--color-amber-600);
   }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
   .text-gray-800\/80 {
     color: color-mix(in srgb, oklch(27.8% 0.033 256.848) 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -544,6 +610,10 @@
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -620,14 +690,23 @@
     .hover\:bg-amber-500:hover {
       background-color: var(--color-amber-500);
     }
+    .hover\:bg-white:hover {
+      background-color: var(--color-white);
+    }
     .hover\:text-\[\#F47732\]:hover {
       color: #F47732;
+    }
+    .hover\:text-\[\#f4640c\]:hover {
+      color: #f4640c;
     }
     .hover\:text-\[\#f94700\]:hover {
       color: #f94700;
     }
     .hover\:text-\[\#fd810d\]:hover {
       color: #fd810d;
+    }
+    .hover\:text-\[f4640c\]:hover {
+      color: f4640c;
     }
     .hover\:text-amber-600:hover {
       color: var(--color-amber-600);
@@ -678,6 +757,26 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -799,6 +898,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -856,6 +960,11 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
@@ -882,6 +991,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-translate-x: 0;
