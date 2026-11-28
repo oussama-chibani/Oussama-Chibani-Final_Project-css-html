@@ -93,4 +93,9 @@ Oussama-Chibani-Final_Project-css-html/
     └── pages/
         ├── I-need-help.html       
         └── take-Action.html        
-```
+
+---
+
+## Standing Together
+
+Created by **Owsama chibani** in solidarity with all women and girls facing digital violence. Silence should never be the price of being online—your safety, dignity, and voice always matter.
