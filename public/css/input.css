@@ -29,3 +29,12 @@
     background-position: center;
     position: relative;
 }
+
+@media  (max-width: 768px){
+    .img-hero {
+        background-position: left;
+        height: 60vh;
+        
+    }
+    
+}
