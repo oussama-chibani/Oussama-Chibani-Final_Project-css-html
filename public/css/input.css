@@ -34,6 +34,16 @@
     .img-hero {
         background-position: left;
         height: 60vh;
+
+    }
+    .bg-img {
+        background-position: center;
+        height: 80vh;
+        
+    } 
+    .bg-img2 {
+        background-position: left;
+        height: 60vh;
         
     }
     
