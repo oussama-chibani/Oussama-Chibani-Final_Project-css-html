@@ -848,14 +848,8 @@
     opacity: 50%;
   }
   @media (width < 48rem) {
-    .max-md\:top-0 {
-      top: 0px;
-    }
     .max-md\:top-\[25\%\] {
       top: 25%;
-    }
-    .max-md\:top-\[25\] {
-      top: 25;
     }
     .max-md\:top-\[50\%\] {
       top: 50%;
@@ -869,8 +863,14 @@
     .max-md\:left-4 {
       left: calc(var(--spacing) * 4);
     }
+    .max-md\:flex {
+      display: flex;
+    }
     .max-md\:hidden {
       display: none;
+    }
+    .max-md\:w-140 {
+      width: calc(var(--spacing) * 140);
     }
     .max-md\:w-\[140px\] {
       width: 140px;
