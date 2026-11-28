@@ -869,6 +869,9 @@
     .max-md\:w-\[140px\] {
       width: 140px;
     }
+    .max-md\:w-auto {
+      width: auto;
+    }
     .max-md\:w-full {
       width: 100%;
     }
